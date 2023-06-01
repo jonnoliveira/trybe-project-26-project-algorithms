@@ -9,9 +9,9 @@ def is_palindrome_recursive(word, low_index, high_index):
     ):  # verifica se a primeira e a ultima letra são diferentes
         return False
 
-    if (
-        low_index >= high_index
-    ):  # verifica se o indie da primeira letra é maior ou igual ao indice da ultima letra para saber se a palavra é palindroma
+    # verifica se o indice da primeira letra é maior ou igual ao indice da
+    # ultima letra para saber se a palavra é palindroma
+    if low_index >= high_index:
         return True
 
     return is_palindrome_recursive(
