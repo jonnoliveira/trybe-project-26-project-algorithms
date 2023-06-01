@@ -7,11 +7,11 @@ def is_integer(time):
 
 def study_schedule(permanence_period, target_time):
     sum = 0
-    if isinstance(target_time, int) == False:
+    if not isinstance(target_time, int):
         return None
 
     for student_times in permanence_period:
-        if is_integer(student_times) == False:
+        if not is_integer(student_times):
             return None
 
         if student_times[0] <= target_time <= student_times[1]:
